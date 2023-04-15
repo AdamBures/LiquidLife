@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type='text/css' href="{% static 'css/style.css'%}">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+ 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.js"></script>
+	</head>
+	<body>
+		<h1>Info</h1>
+		<p>When water is used inefficiently or unnecessarily, it can lead to the depletion of water supplies, higher water bills, and environmental degradation. At several stages, such as water extraction, distribution, and consumption, water waste can happen.</p>
+		<p>This table here shows quality of water in all the countries in the world.</p>
+			<table id="table" class="display">
+			    <thead>
+			        <tr>
+			            <th>Country</th>
+			            <th>Rank</th>
+			            <th>Value</th>
+			        </tr>
+			    </thead>
+			</table>
+			<canvas id="myChart" width="25%" height="25%"></canvas>
+			<script>
+				$(document).ready(function() {
+				    $('#table').DataTable({
+				        ajax: "{% url 'data' %}",
+				        columns: [
+				            {data: "country"},
+				            {data: "rank"},
+				            {data: "value"}
+				        ]
+				    });
+				    $.ajax({
+			        url: "{% url 'data' %}",
+			        success: function(result) {
+			          var data = result.data;
+			          var labels = [];
+			          var values = [];
+
+			          for (var i = 0; i < data.length; i++) {
+			            labels.push(data[i].country);
+			            values.push(data[i].value);
+			          }
+
+			          var ctx = document.getElementById('myChart').getContext('2d');
+			          var myChart = new Chart(ctx, {
+			            type: 'bar',
+			            data: {
+			              labels: labels,
+			              datasets: [{
+			                label: 'Water Quality',
+			                data: values,
+			                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+			                borderColor: 'rgba(255, 99, 132, 1)',
+			                borderWidth: 1
+			              }]
+			            },
+			            options: {
+			              scales: {
+			                yAxes: [{
+			                  ticks: {
+			                    beginAtZero: true
+			                  }
+			                }]
+			              }
+			            }
+			          });
+			        }
+			      });
+				});
+			</script>
+	</body>
+</html>
