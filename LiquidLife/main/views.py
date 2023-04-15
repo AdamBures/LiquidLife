@@ -7,6 +7,13 @@ from django.http import JsonResponse
 def index(request):
 	return render(request, "index.html")
 
+def products(request):
+	filters = Filter.objects.all().values()
+	context = {
+		"filters": filters,
+	}
+	return render(request, "products.html", context)
+
 def data(request):
 	url = "https://epi.yale.edu/epi-results/2020/component/uwd"
 	response = requests.get(url)
