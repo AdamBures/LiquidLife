@@ -9,6 +9,10 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -475,73 +479,6 @@ section {
 .about-boxes {
   background-color: #f2f4f7;
 }
-.about-boxes {
-  background-size: cover;
-  padding: 60px 0 30px 0;
-  position: relative;
-}
-
-.about-boxes::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: #E3F1FF;
-  z-index: 9;
-}
-
-.about-boxes .container, .about-boxes .container-fluid {
-  position: relative;
-  z-index: 10;
-}
-
-.about-boxes .card {
-  border-radius: 3px;
-  border: 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  padding: 5%;
-  border-radius: 30px;
-}
-
-.about-boxes .card-body {
-  padding-top: 12px;
-}
-
-.about-boxes .card-title {
-  font-weight: 700;
-  text-align: center;
-}
-
-.about-boxes .card-title a {
-  color: gold;
-}
-
-.about-boxes .card-title a:hover {
-  color: gold;
-}
-
-.about-boxes .card-text {
-  color: black;
-}
-.about-boxes img {
-  border-radius: 40px;
-}
-
-.about-boxes .card:hover .card-icon i {
-  background: #fff;
-  color: gold;
-}
-
-@media (max-width: 1024px) {
-  .about-boxes {
-    background-attachment: scroll;
-  }
-}
-
-
 
 /*--------------------------------------------------------------
 # Contact Me
