@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#section1 {
+  position: relative;
+  z-index: 1;
+  top: -20px;
+  height: 100%;
+  background-image: url('/static/images/water.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: padding-box;
+}
+
+#section2 {
+  height: 600px;
+  background-color: yellow;
+}
