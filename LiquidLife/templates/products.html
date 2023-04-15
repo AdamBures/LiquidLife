@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Products</title>
+	</head>
+	<body>
+		<h1>Products</h1>
+		<p>Water filters are devices designed to remove impurities and contaminants 
+			from water, making it safe and clean for consumption. 
+			There are various types of water filters available on the market, 
+			each with its own specific method of filtering water.</p>
+		<p>Our start up offers a three solutions to filter water: </p>
+		{% for filter in filters %}
+			<div id="water_filter">
+				<h3>{{ filter.name }}</h3>
+				<img src="{{ filter.icon }}">
+				<p>{{ filter.description }}</p>
+			</div>
+		{% endfor %}
+	</body>
+</html>
