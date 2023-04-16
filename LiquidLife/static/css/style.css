@@ -2,7 +2,8 @@
   height: 100%;
   margin: 0;
   padding: 0;
-
+#007aff
+#ffb727
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -16,12 +17,12 @@ body {
 }
 
 a {
-  color: #ffb727;
+  color: #007aff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffc85a;
+  color: #007aff;
   text-decoration: none;
 }
 
@@ -39,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffb727;
+  background: #007aff;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -100,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 46px;
 }
 #navbut:hover {
-  color: gold;
+  color: #007aff;
   background-color: #929292;
 }
 .navbar ul {
@@ -133,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #ffb727;
+  color: #007aff;
 }
 .navbar .dropdown ul {
   display: block;
@@ -165,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #ffb727;
+  color: #007aff;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -248,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #3b434a;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #ffb727;
+  color: #007aff;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -274,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #ffb727;
+  color: #007aff;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -334,7 +335,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
 }
 #hero .btn-scroll:hover {
-  color: #ffb727;
+  color: #007aff;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -475,7 +476,7 @@ section {
 # About Boxes
 --------------------------------------------------------------*/
 .about-boxes {
-  background-color: #f2f4f7;
+  background-color: #abc9f5;
 }
 .about-boxes {
   background-size: cover;
@@ -490,7 +491,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: #E3F1FF;
+  background: #abc9f5;
   z-index: 9;
 }
 
@@ -518,11 +519,11 @@ section {
 }
 
 .about-boxes .card-title a {
-  color: gold;
+  color: #007aff;
 }
 
 .about-boxes .card-title a:hover {
-  color: gold;
+  color: #007aff;
 }
 
 .about-boxes .card-text {
@@ -534,7 +535,7 @@ section {
 
 .about-boxes .card:hover .card-icon i {
   background: #fff;
-  color: gold;
+  color: #007aff;
 }
 
 @media (max-width: 1024px) {
@@ -549,9 +550,77 @@ section {
 # Products Boxes
 --------------------------------------------------------------*/
 .products-boxes {
-  background-color: #f2f4f7;
+  background-color: whitesmoke;
+}
+.products-boxes {
+  background-size: cover;
+  padding: 60px 0 30px 0;
+  position: relative;
 }
 
+.products-boxes::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: whitesmoke;
+  z-index: 9;
+}
+
+.products-boxes {
+  background-color: whitesmoke;
+}
+
+.products-boxes .container, .products-boxes .container-fluid {
+  position: relative;
+  z-index: 10;
+}
+
+.products-boxes .card {
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 5%;
+  border-radius: 30px;
+}
+
+.products-boxes .card-body {
+  padding-top: 12px;
+}
+
+.products-boxes .card-title {
+  font-weight: 700;
+  text-align: center;
+}
+
+.products-boxes .card-title a {
+  color: #007aff;
+}
+
+.products-boxes .card-title a:hover {
+  color: #007aff;
+}
+
+.products-boxes .card-text {
+  color: black;
+}
+.products-boxes img {
+  border-radius: 40px;
+}
+
+.products-boxes .card:hover .card-icon i {
+  background: #fff;
+  color: #007aff;
+}
+
+@media (max-width: 1024px) {
+  .products-boxes {
+    background-attachment: scroll;
+  }
+}
 
 
 /*--------------------------------------------------------------
@@ -559,6 +628,26 @@ section {
 --------------------------------------------------------------*/
 .edit-boxes {
   background-color: #abc9f5;
+}
+
+.edit-boxes #table_wrapper { 
+  background-color: white;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 5%;
+  border-radius: 30px;
+}
+
+.edit-boxes canvas { 
+  background-color: white;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 5%;
+  border-radius: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -575,7 +664,7 @@ section {
 }
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #ffb727;
+  color: #007aff;
   border-radius: 50%;
   padding: 15px;
   background: #fff6e4;
@@ -591,7 +680,7 @@ section {
   height: 50px;
   width: 150px;
   border-radius: 10px;
-  background-color: gold;
+  background-color: #007aff;
 }
 #messagebut {
   color: white;
@@ -624,8 +713,8 @@ section {
 }
 .contact .social-links a:hover {
   color: #fff;
-  border-color: #ffb727;
-  background: #ffb727;
+  border-color: #007aff;
+  background: #007aff;
 }
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
@@ -681,7 +770,7 @@ section {
   font-size: 14px;
 }
 .contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
-  background-color: #ffb727;
+  background-color: #007aff;
 }
 .contact .php-email-form input {
   padding: 10px 15px;
@@ -690,7 +779,7 @@ section {
   padding: 12px 15px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #ffb727;
+  background: #007aff;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -762,7 +851,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #ffb727;
+  background: #007aff;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
