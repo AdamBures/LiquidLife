@@ -6,14 +6,11 @@ from .models import Filter
 
 # Create your views here.
 def index(request):
-	return render(request, "index.html")
-
-def products(request):
 	filters = Filter.objects.all().values()
 	context = {
 		"filters": filters,
 	}
-	return render(request, "products.html", context)
+	return render(request, "index.html", context)
 
 def data(request):
 	url = "https://epi.yale.edu/epi-results/2020/component/uwd"
@@ -46,6 +43,3 @@ def data(request):
 		}
 		lst.append(dic)
 	return JsonResponse({"data": lst})
-
-def info(request):
-	return render(request, 'info.html')
