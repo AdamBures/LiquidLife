@@ -15,3 +15,6 @@ This will start the development server on your local machine.
 Once the server has started, you can access the application by opening your web browser and navigating to `http://127.0.0.1:8000/` or `http://localhost:8000/`.
 
 If you encounter any errors or issues, make sure to check the Django documentation or seek help from the community.
+
+Prototype in FIGMA:
+https://www.figma.com/file/2caSOy1gNoziwbRY78FTKV/Untitled?node-id=0%3A1&t=x50X2sOjDhVS4oyW-1
