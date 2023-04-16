@@ -51,13 +51,13 @@
             <a class="nav-link scrollto active" href="#hero">Home</a>
           </li>
           <li>
+            <a class="nav-link scrollto" href="#about-boxes">About</a>
+          </li>
+          <li>
             <a class="nav-link scrollto" href="#products">Products</a>
           </li>
           <li>
             <a class="nav-link scrollto" href="#info">Info</a>
-          </li>
-          <li>
-            <a class="nav-link scrollto" href="#about">About</a>
           </li>
           <li>
             <a class="nav-link scrollto" href="#contact">Contact</a>
@@ -72,11 +72,70 @@
     <section id="hero">
       <div class="hero-container">
         <h1>A platform that displays statistics on the quality of the water in various nations.</h1>
-        <a href="#products" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+        <a href="#about-boxes" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
       </div>
     </section>
     <!-- End Hero -->
     <main id="main">
+
+
+      <!-- ======= About Section ======= -->
+      <section id="about-boxes" class="about-boxes">
+        <div class="container">
+
+            <div class="section-title">
+
+                <p style="text-align: center;">Water filters</p>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="card">
+                        <div id="card-title">
+                            <h2 style="text-align: center;">Activated Carbon Filters</h2>
+                        </div>
+                        <img src="{% static 'images/carbon-filters.jpg' %}" class="card-img-top" alt="...">
+
+                        <div class="card-body">   
+                          <p class="card-text">These filters use activated carbon to remove impurities and contaminants from the water. The activated carbon attracts and adsorbs chemicals and organic compounds, such as chlorine, pesticides, and herbicides, which can cause an unpleasant taste or odor in the water. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="card">
+                        <div id="card-title">
+                            <h2 style="text-align: center;">Reverse Osmosis Filters</h2>
+                        </div>
+                        <img src="{% static 'images/Osmosis.jpg' %}" class="card-img-top" alt="...">
+
+                        <div class="card-body">   
+                          <p class="card-text">These filters use a semi-permeable membrane to remove impurities from the water. Water is forced through the membrane, which traps contaminants such as lead, mercury, and fluoride, as well as bacteria and viruses. </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="card">
+                        <div id="card-title">
+                            <h2 style="text-align: center;">UV Filters</h2>
+                        </div>
+                        <img src="{% static 'images/uv.png' %}" class="card-img-top" alt="...">
+
+                        <div class="card-body">   
+                          <p class="card-text"> These filters use ultraviolet light to disinfect the water and kill harmful bacteria and viruses. UV filters are typically used in combination with other filters, such as activated carbon filters, to ensure that the water is both clean and safe to drink. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+      <!---- end-About Section -->
+
+
       <!-- ======= products Section ======= -->
       <section id="products" class="products">
         <div class="container">
@@ -101,9 +160,9 @@
           </div>
         </div>
       </section>
-      <!-- products Section -->
+      <!--end products Section -->
       <!-- ======= Statistics Section ======= -->
-      <section id="about-boxes" class="about-boxes">
+      <section id="edit-boxes" class="edit-boxes">
         <div class="container">
           <div class="section-title">
             <p style="text-align: center;">Statistics</p>
